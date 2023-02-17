@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Eventos em JavaScript</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onresize="console.log('Houve um redimencionamento')">
+  <!--onload="alert('Terminou de carregar')"-->
+  <!--onmouseup="alert('clicou na tela')"-->
+  <header>
+    <h1>Aula sobre Eventos em JavaScript</h1>
+  </header>
+
+  <p id="texto"></p>
+  
+  <button onclick="eventoClick()">Clique aqui</button>
+
+  <button ondblclick="eventoDblClick()">Clique aqui no segundo botão</button><br><br>
+
+  <select onchange="mudou()" id="itens">
+    <option value="1">Valor 1</option>
+    <option value="2">Valor 2</option>
+    <option value="3">Valor 3</option>
+    <option value="4">Valor 4</option>
+  </select>
+  
+  <br><br>
+  
+  <div id="teste" class="div-exemplo" onmouseover="viraVermelho()" onmouseout="viraAzul()" onmousemove="adicionaTexto()"></div>
+
+  <br>
+
+  <!--onkeypress="teclaPressionada()"-->
+  <!--onkeydown="teclaPressionada()"-->
+  <!--onkeyup="teclaPressionada()"-->
+<input onkeyup="teclaPressionada()" onblur="eventoClick()" onfocus="limpaTexto()" id="campoTexto" style="padding: 80px; font-size: 40px;" type="text" placeholder="Digite alguma coisa" value="Já vem com texto">
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
