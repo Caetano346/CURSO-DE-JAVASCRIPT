@@ -22,16 +22,16 @@ function eventoClick(){
       let div = document.getElementById("teste")
       div.style.backgroundColor = "blue"
     }
-    /*
+    
     function adicionaTexto(){
       let p = document.getElementById("texto")
       p.append('O mouse moveu<br>')
     }
-    */
+    
     
     //-----------------------FUNÇÕES RELACIONADAS A TEXTO---------------------//
     function limpaTexto(){
-      document.getElementById("campoTexto").value = ""
+      document.getElementById("campoTexto").value = "Texto adicionado"
     }
     
     function mudou(){
@@ -40,11 +40,11 @@ function eventoClick(){
     
     //----------------------FUNÇÕES RELACIONADAS A TECLAS-----------------------------//
     function teclaPressionada(){
-    /*let = input = document.getElementById("campoTexto").value
+     let = input = document.getElementById("campoTexto").value
       console.log(input)
-    */
+    
       console.log('Tecla pressionada')
     }
     
     //------------FUNÇÃO PARA SER FEITA NO BODY QUANDO A PÁGINA TERMINA DE SER CARREGADA--------//
-     //onload="alert('Terminou de carregar')"
+     onload="alert('Terminou de carregar')"
