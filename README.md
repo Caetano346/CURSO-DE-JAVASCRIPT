@@ -1,2 +1,2 @@
-# Curso-de-JavaScript
- Curso Online de JavaScript
+# Curso-de-Javascript
+ Curso Online de Javascript
